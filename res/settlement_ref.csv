@@ -1,0 +1,5 @@
+SettlementType,RenownGain,FateGain,ProsperityTax,HappinessTax
+Village,2,0,-1,-1
+Town,5,1,-2,-2
+City,10,3,-3,-3
+Capital,20,5,-5,-5
