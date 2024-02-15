@@ -29,6 +29,10 @@ class Unit:
         self.cost = UNIT_COSTS[self.kind] + 2*sum(m.bonus
                                                   for m in self.modifiers)
         # Fix Renown costs for unit types that give preset bonuses
+        if self.kind == "infantry":
+            self.cost -= 4
+        if self.kind == "cavalry":
+            self.cost -= 2
         if self.kind == "siege":
             self.cost -= 2
 
@@ -61,7 +65,12 @@ class UnitGroup():
                                            for m in u.modifiers])
 
     def __str__(self) -> str:
-        return "\n\n".join([str(unit) for unit in self.units])
+        desc = "\n\n".join([str(unit) for unit in self.units])
+        desc += "\nTotal Modifiers:"
+        if self.modifiers:
+            desc += "\n\t"
+            desc += "\n\t".join(str(ug_mod) for ug_mod in self.modifiers)
+        return desc
 
     def renown_value(self):
         if not self.units:
@@ -76,12 +85,15 @@ def renown_difference(ug1: UnitGroup, ug2: UnitGroup) -> int:
 
 
 UNIT_TEMPLATES = {
-    "basic_infantry": Unit(4, True, "infantry", [], name="Basic Infantry"),
-    "basic_cavalry": Unit(7, True, "cavalry", ["+2 siege open",
-                                               "-2 all struct"],
-                          name="Basic Cavalry"),
-    "basic_siege": Unit(3, True, "siege", ["-2 all open", "+3 all struct"],
-                        name="Basic Siege"),
-    "basic_naval": Unit(10, True, "naval", [],
-                        name="Basic Naval")
+    "basic_infantry": lambda: Unit(4, True, "infantry", [],
+                                   name="Basic Infantry"),
+    "basic_cavalry": lambda: Unit(7, True, "cavalry", ["+2 siege open",
+                                                       "+1 infantry open",
+                                                       "-2 all struct"],
+                                  name="Basic Cavalry"),
+    "basic_siege": lambda: Unit(3, True, "siege", ["-2 all open",
+                                                   "+3 all struct"],
+                                name="Basic Siege"),
+    "basic_naval": lambda: Unit(10, True, "naval", [],
+                                name="Basic Naval")
 }

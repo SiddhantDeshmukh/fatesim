@@ -1,3 +1,4 @@
+from copy import deepcopy
 from typing import List
 from fatesim.utils import parse_bonus_str
 
@@ -21,11 +22,12 @@ class Modifier():
             return f"{self.bonus} {self.target}"
 
 
-def combine_modifiers(modifiers: List[Modifier]) -> List[Modifier]:
+def combine_modifiers(modifiers_: List[Modifier]) -> List[Modifier]:
     # Combines the numerical values of like modifiers
-    if not modifiers:
+    if not modifiers_:
         return []
     new_modifiers = []
+    modifiers = deepcopy(modifiers_)
     for mod in modifiers:
         found = False
         for nmod in new_modifiers:

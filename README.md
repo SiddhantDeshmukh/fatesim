@@ -11,3 +11,4 @@ generate random events and take decisions.
 - Write basic AI to take actions
 - Generate random events and store
 - Write basic AI to choose randome events based on nation's indicators and past events
+- Handle naval and land combat

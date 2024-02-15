@@ -1,3 +1,4 @@
+from copy import deepcopy
 from typing import List
 import random
 
@@ -9,21 +10,35 @@ from fatesim.unit import UnitGroup, UNIT_TEMPLATES
 def main():
     # random.seed(420)
     # Create units on both sides and simualte battles
-    ug1 = UnitGroup([
-        UNIT_TEMPLATES["basic_infantry"],
-        UNIT_TEMPLATES["basic_infantry"],
-        UNIT_TEMPLATES["basic_siege"],
-    ], "IIS")
+    # ug_iis = UnitGroup([
+    #     UNIT_TEMPLATES["basic_infantry"],
+    #     UNIT_TEMPLATES["basic_infantry"],
+    #     UNIT_TEMPLATES["basic_siege"],
+    # ], "IIS")
 
-    ug2 = UnitGroup([
-        UNIT_TEMPLATES["basic_cavalry"],
-        UNIT_TEMPLATES["basic_cavalry"],
-        UNIT_TEMPLATES["basic_siege"],
-    ], "CCS")
+    # ug_ccs = UnitGroup([
+    #     UNIT_TEMPLATES["basic_cavalry"],
+    #     UNIT_TEMPLATES["basic_cavalry"],
+    #     UNIT_TEMPLATES["basic_siege"],
+    # ], "CCS")
+
+    ug_iii = UnitGroup([
+        UNIT_TEMPLATES["basic_infantry"](),
+        UNIT_TEMPLATES["basic_infantry"](),
+        UNIT_TEMPLATES["basic_infantry"](),
+    ], "III")
+
+    ug_iic = UnitGroup([
+        UNIT_TEMPLATES["basic_infantry"](),
+        UNIT_TEMPLATES["basic_cavalry"](),
+        UNIT_TEMPLATES["basic_cavalry"](),
+    ], "ICC")
 
     # Many battles
-    sim_stats_open = simulate_n_stats(ug1, ug2, is_open=True, n=1000)
-    sim_stats_struct = simulate_n_stats(ug1, ug2, is_open=False, n=1000)
+    # sim_stats_open = simulate_n_stats(ug_iis, ug_ccs, is_open=True, n=1000)
+    # sim_stats_struct = simulate_n_stats(ug_iis, ug_ccs, is_open=False, n=1000)
+    sim_stats_open = simulate_n_stats(ug_iii, ug_iic, is_open=True, n=1000)
+    sim_stats_struct = simulate_n_stats(ug_iii, ug_iic, is_open=False, n=1000)
     # print(ug1)
     # print(ug2)
     print("Open Battle")
