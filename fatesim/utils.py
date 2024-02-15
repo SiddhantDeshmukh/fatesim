@@ -1,33 +1,29 @@
-from typing import Dict, List
+from typing import Tuple
 import re
+import random
 
 
 # Generic utilities
-def clamp (value, minv, maxv):
+def clamp(value, minv, maxv):
     max(min(value, maxv), minv)
 
 
 # Utilities for bonuses and modifiers
-def parse_bonus_str(bonus_str: str) -> Dict:
-    # 'bonus_str' is in format "<NUMBER> <UNIT_TYPE>", returns
-    # {<UNIT_TYPE> (str): <NUMBER> (int)} for easy consolidation later
-    pattern = r'([-+]?\d+)\s*(.*)'
+def parse_bonus_str(bonus_str: str) -> Tuple:
+    # 'bonus_str' is in format "<NUMBER> <TARGET_UNIT_TYPE>", returns
+    # (<NUMBER> <TARGET_UNIT_TYPE>)
+    pattern = r"([-+]?\d+)\s*(\w+(\s+\w+)*)"
     match = re.match(pattern, bonus_str)
     modifier = int(match.group(1))
-    unit_type = match.group(2).strip()
+    target = match.group(2)
 
-    return {unit_type: modifier}
+    return (modifier, target)
 
-def consolidate_bonuses(bonuses: List[Dict]) -> Dict:
-    # Takes in a list of dicts as made from 'parse_bonus_str' and
-    # consolidates into a single dict, adding up modifiers for duplicate
-    # keys
-    consolidated = {}
-    for bonus in bonuses:
-        for bk in bonus:
-            if bk in consolidated:
-                consolidated[bk] += bonus[bk]
-            else:
-                consolidated[bk] = bonus[bk]
 
-    return consolidated
+# RNG
+def roll_d6() -> int:
+    return random.randint(1, 6)
+
+
+def roll_d3() -> int:
+    return random.randint(1, 3)

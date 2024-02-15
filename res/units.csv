@@ -1,0 +1,5 @@
+Unit,RenownCost,BaseMovement,BaseBonus
+Infantry,5,4,""
+Cavalry,8,7,"+2 siege open, -2 all struct"
+Siege,12,3,"-2 all open, +3 all struct"
+Naval,8,10,""
