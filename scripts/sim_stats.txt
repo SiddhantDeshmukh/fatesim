@@ -1,0 +1,380 @@
+=== Simulation 1 ===
+
+Open Battle:
+
+100 trials: EC_EC - EC_EI_ES
+Wins: 76 - 19
+Average Roll Deficit: 4.73
+Average Overall Cost: 1.40 - 13.49
+Average Loss Cost: 7.37 - 17.75
+Structure Battle:
+
+100 trials: EC_EC - EC_EI_ES
+Wins: 0 - 99
+Average Roll Deficit: 8.27
+Average Overall Cost: 20.86 - 0.00
+Average Loss Cost: 21.07 - 0.00
+
+----------------------------------------
+
+=== Simulation 2 ===
+
+Open Battle:
+
+100 trials: EI - BI_BC_EI
+Wins: 5 - 89
+Average Roll Deficit: 5.31
+Average Overall Cost: 15.02 - 0.05
+Average Loss Cost: 16.88 - 1.00
+Structure Battle:
+
+100 trials: EI - BI_BC_EI
+Wins: 3 - 92
+Average Roll Deficit: 4.84
+Average Overall Cost: 14.78 - 0.03
+Average Loss Cost: 16.07 - 1.00
+
+----------------------------------------
+
+=== Simulation 3 ===
+
+Open Battle:
+
+100 trials: ES_BI_ES - BI_BC
+Wins: 65 - 26
+Average Roll Deficit: 4.07
+Average Overall Cost: 0.71 - 2.09
+Average Loss Cost: 2.73 - 3.22
+Structure Battle:
+
+100 trials: ES_BI_ES - BI_BC
+Wins: 100 - 0
+Average Roll Deficit: 11.79
+Average Overall Cost: 0.00 - 7.68
+Average Loss Cost: 0.00 - 7.68
+
+----------------------------------------
+
+=== Simulation 4 ===
+
+Open Battle:
+
+100 trials: BI_BS_BI - EC_BC_EC
+Wins: 0 - 100
+Average Roll Deficit: 17.76
+Average Overall Cost: 11.48 - 0.00
+Average Loss Cost: 11.48 - 0.00
+Structure Battle:
+
+100 trials: BI_BS_BI - EC_BC_EC
+Wins: 99 - 1
+Average Roll Deficit: 8.18
+Average Overall Cost: 0.01 - 16.00
+Average Loss Cost: 1.00 - 16.16
+
+----------------------------------------
+
+=== Simulation 5 ===
+
+Open Battle:
+
+100 trials: BS_ES_BI - BS_EI_BS
+Wins: 29 - 64
+Average Roll Deficit: 3.63
+Average Overall Cost: 2.62 - 2.28
+Average Loss Cost: 4.09 - 7.86
+Structure Battle:
+
+100 trials: BS_ES_BI - BS_EI_BS
+Wins: 50 - 41
+Average Roll Deficit: 3.95
+Average Overall Cost: 1.28 - 6.00
+Average Loss Cost: 3.12 - 12.00
+
+----------------------------------------
+
+=== Simulation 6 ===
+
+Open Battle:
+
+100 trials: ES - BI
+Wins: 51 - 39
+Average Roll Deficit: 2.06
+Average Overall Cost: 4.05 - 0.51
+Average Loss Cost: 10.38 - 1.00
+Structure Battle:
+
+100 trials: ES - BI
+Wins: 82 - 8
+Average Roll Deficit: 2.81
+Average Overall Cost: 0.72 - 0.82
+Average Loss Cost: 9.00 - 1.00
+
+----------------------------------------
+
+=== Simulation 7 ===
+
+Open Battle:
+
+100 trials: EC_ES - BS_BI
+Wins: 99 - 0
+Average Roll Deficit: 9.0
+Average Overall Cost: 0.00 - 8.97
+Average Loss Cost: 0.00 - 9.06
+Structure Battle:
+
+100 trials: EC_ES - BS_BI
+Wins: 25 - 64
+Average Roll Deficit: 2.97
+Average Overall Cost: 7.75 - 0.73
+Average Loss Cost: 12.11 - 2.92
+
+----------------------------------------
+
+=== Simulation 8 ===
+
+Open Battle:
+
+100 trials: EI_EI_EI - EI_BI_BS
+Wins: 100 - 0
+Average Roll Deficit: 16.99
+Average Overall Cost: 0.00 - 27.33
+Average Loss Cost: 0.00 - 27.33
+Structure Battle:
+
+100 trials: EI_EI_EI - EI_BI_BS
+Wins: 20 - 76
+Average Roll Deficit: 4.27
+Average Overall Cost: 14.78 - 0.72
+Average Loss Cost: 19.45 - 3.60
+
+----------------------------------------
+
+=== Simulation 9 ===
+
+Open Battle:
+
+100 trials: BS_ES - BS
+Wins: 91 - 8
+Average Roll Deficit: 4.74
+Average Overall Cost: 0.48 - 8.88
+Average Loss Cost: 6.00 - 9.76
+Structure Battle:
+
+100 trials: BS_ES - BS
+Wins: 98 - 0
+Average Roll Deficit: 6.34
+Average Overall Cost: 0.00 - 10.98
+Average Loss Cost: 0.00 - 11.20
+
+----------------------------------------
+
+=== Simulation 10 ===
+
+Open Battle:
+
+100 trials: BC - BI
+Wins: 65 - 20
+Average Roll Deficit: 2.29
+Average Overall Cost: 0.84 - 0.65
+Average Loss Cost: 4.20 - 1.00
+Structure Battle:
+
+100 trials: BC - BI
+Wins: 21 - 66
+Average Roll Deficit: 2.51
+Average Overall Cost: 3.88 - 0.21
+Average Loss Cost: 5.88 - 1.00
+
+----------------------------------------
+
+=== Simulation 11 ===
+
+Open Battle:
+
+100 trials: BS_EI - EC
+Wins: 29 - 58
+Average Roll Deficit: 2.45
+Average Overall Cost: 5.82 - 2.45
+Average Loss Cost: 10.03 - 8.45
+Structure Battle:
+
+100 trials: BS_EI - EC
+Wins: 100 - 0
+Average Roll Deficit: 8.17
+Average Overall Cost: 0.00 - 13.44
+Average Loss Cost: 0.00 - 13.44
+
+----------------------------------------
+
+=== Simulation 12 ===
+
+Open Battle:
+
+100 trials: BC_ES_EI - BC
+Wins: 98 - 1
+Average Roll Deficit: 8.26
+Average Overall Cost: 0.04 - 7.64
+Average Loss Cost: 4.00 - 7.80
+Structure Battle:
+
+100 trials: BC_ES_EI - BC
+Wins: 100 - 0
+Average Roll Deficit: 9.92
+Average Overall Cost: 0.00 - 7.84
+Average Loss Cost: 0.00 - 7.84
+
+----------------------------------------
+
+=== Simulation 13 ===
+
+Open Battle:
+
+100 trials: EI_EI_BS - BI
+Wins: 100 - 0
+Average Roll Deficit: 10.84
+Average Overall Cost: 0.00 - 1.00
+Average Loss Cost: 0.00 - 1.00
+Structure Battle:
+
+100 trials: EI_EI_BS - BI
+Wins: 99 - 0
+Average Roll Deficit: 9.78
+Average Overall Cost: 0.00 - 0.99
+Average Loss Cost: 0.00 - 1.00
+
+----------------------------------------
+
+=== Simulation 14 ===
+
+Open Battle:
+
+100 trials: EI_BI - ES_EC
+Wins: 62 - 27
+Average Roll Deficit: 3.05
+Average Overall Cost: 0.67 - 7.55
+Average Loss Cost: 2.48 - 12.18
+Structure Battle:
+
+100 trials: EI_BI - ES_EC
+Wins: 33 - 57
+Average Roll Deficit: 2.77
+Average Overall Cost: 2.27 - 2.85
+Average Loss Cost: 3.98 - 8.64
+
+----------------------------------------
+
+=== Simulation 15 ===
+
+Open Battle:
+
+100 trials: BC - EI_BS_EC
+Wins: 4 - 90
+Average Roll Deficit: 5.37
+Average Overall Cost: 6.32 - 0.24
+Average Loss Cost: 7.02 - 6.00
+Structure Battle:
+
+100 trials: BC - EI_BS_EC
+Wins: 0 - 100
+Average Roll Deficit: 10.83
+Average Overall Cost: 7.96 - 0.00
+Average Loss Cost: 7.96 - 0.00
+
+----------------------------------------
+
+=== Simulation 16 ===
+
+Open Battle:
+
+100 trials: ES_ES - BC_BS
+Wins: 61 - 25
+Average Roll Deficit: 2.89
+Average Overall Cost: 2.34 - 4.60
+Average Loss Cost: 9.36 - 7.54
+Structure Battle:
+
+100 trials: ES_ES - BC_BS
+Wins: 86 - 9
+Average Roll Deficit: 5.23
+Average Overall Cost: 0.81 - 9.24
+Average Loss Cost: 9.00 - 10.74
+
+----------------------------------------
+
+=== Simulation 17 ===
+
+Open Battle:
+
+100 trials: BS_EC_EI - BI_EI
+Wins: 35 - 56
+Average Roll Deficit: 3.35
+Average Overall Cost: 5.82 - 1.45
+Average Loss Cost: 10.39 - 4.14
+Structure Battle:
+
+100 trials: BS_EC_EI - BI_EI
+Wins: 82 - 15
+Average Roll Deficit: 4.98
+Average Overall Cost: 0.97 - 6.82
+Average Loss Cost: 6.47 - 8.32
+
+----------------------------------------
+
+=== Simulation 18 ===
+
+Open Battle:
+
+100 trials: BC - BS_ES_EI
+Wins: 2 - 97
+Average Roll Deficit: 5.47
+Average Overall Cost: 6.76 - 0.12
+Average Loss Cost: 6.97 - 6.00
+Structure Battle:
+
+100 trials: BC - BS_ES_EI
+Wins: 0 - 100
+Average Roll Deficit: 14.97
+Average Overall Cost: 8.00 - 0.00
+Average Loss Cost: 8.00 - 0.00
+
+----------------------------------------
+
+=== Simulation 19 ===
+
+Open Battle:
+
+100 trials: EC_BI_EC - BS_EI_ES
+Wins: 95 - 4
+Average Roll Deficit: 7.05
+Average Overall Cost: 0.11 - 19.34
+Average Loss Cost: 2.75 - 20.36
+Structure Battle:
+
+100 trials: EC_BI_EC - BS_EI_ES
+Wins: 0 - 100
+Average Roll Deficit: 10.03
+Average Overall Cost: 13.25 - 0.00
+Average Loss Cost: 13.25 - 0.00
+
+----------------------------------------
+
+=== Simulation 20 ===
+
+Open Battle:
+
+100 trials: BC - BC_BI
+Wins: 18 - 75
+Average Roll Deficit: 2.81
+Average Overall Cost: 4.08 - 0.22
+Average Loss Cost: 5.44 - 1.22
+Structure Battle:
+
+100 trials: BC - BC_BI
+Wins: 4 - 88
+Average Roll Deficit: 3.72
+Average Overall Cost: 5.44 - 0.04
+Average Loss Cost: 6.18 - 1.00
+
+----------------------------------------
+

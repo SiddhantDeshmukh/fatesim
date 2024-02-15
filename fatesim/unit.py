@@ -36,6 +36,17 @@ class Unit:
         if self.kind == "siege":
             self.cost -= 2
 
+        self.data_dict = {
+            "movement": self.movement,
+            "has_military": self.has_military,
+            "kind": self.kind,
+            "affiliation": self.affiliation,
+            "modifiers": self.modifiers_str(),
+            "name": f"\"{self.name}\"",
+            "is_bloodied": self.is_bloodied,
+            "cost": self.cost
+        }
+
     def __str__(self) -> str:
         desc = f"{self.name} ({self.cost} Renown)"
         desc += f"\n\tKind = {self.kind}"
@@ -49,12 +60,23 @@ class Unit:
 
         return desc
 
+    def __getitem__(self, key: str):
+        return self.data_dict[key]
+
     def renown_value(self):
         # Renown value is cost, halved if unit is bloodied
         value = self.cost
         if self.is_bloodied:
             value //= 2
         return value
+
+    def modifiers_str(self) -> str:
+        # Get all the modifiers as a csv string
+        mstr = ""
+        for m in self.modifiers:
+            mstr += f"{m},"
+        mstr.rstrip(",")
+        return f"\"{mstr}\""
 
 
 class UnitGroup():
@@ -94,6 +116,17 @@ UNIT_TEMPLATES = {
     "basic_siege": lambda: Unit(3, True, "siege", ["-2 all open",
                                                    "+3 all struct"],
                                 name="Basic Siege"),
-    "basic_naval": lambda: Unit(10, True, "naval", [],
-                                name="Basic Naval")
+    # "basic_naval": lambda: Unit(10, True, "naval", [],
+    #                             name="Basic Naval")
+    "extra_infantry": lambda: Unit(4, True, "infantry", ["+3 infantry open",
+                                                         "+3 cavalry open",
+                                                         "+3 siege open"],
+                                   name="Basic Infantry"),
+    "extra_cavalry": lambda: Unit(7, True, "cavalry", ["+3 siege open",
+                                                       "+3 infantry open",
+                                                       "-2 all struct"],
+                                  name="Basic Cavalry"),
+    "extra_siege": lambda: Unit(3, True, "siege", ["+1 all open",
+                                                   "+3 all struct"],
+                                name="Basic Siege"),
 }
